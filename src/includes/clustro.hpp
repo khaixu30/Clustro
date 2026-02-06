@@ -35,21 +35,22 @@
 
 class Clustro {
 private:
-     // ========== User/Follow Operations ==========
-    void viewProfile();
-    void viewOtherUserProfile();
-    void followUserMenu();
-    void viewFollowers();
-    void viewFollowing();
-    void viewSuggestions(); // Added suggestion viewer
-    void searchUsers();
+     // ========== Post Operations ==========
+    void createPost();
+    void viewMyPosts();
+    void deletePost();
+    void likePost();
+    void unlikePost();
+    void editPost();
     
-
-public:
-    // ========== Constructor & Destructor ==========
-    Clustro();
-    ~Clustro();
+    // ========== Feed Operations ==========
+    void viewFeed();
+    void viewUserFeed(const std::string& user_id);
+    void interactWithPost();
     
-    // ========== Main Application Loop ==========
-    void run();
+    // ========== Comment Operations ==========
+    void addCommentToPost();
+    void viewPostComments();
+    void deleteComment();
+    void likeComment();
 };
