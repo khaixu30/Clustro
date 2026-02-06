@@ -43,7 +43,25 @@ private:
     void viewFollowing();
     void viewSuggestions(); // Added suggestion viewer
     void searchUsers();
+
+// ========== Post Operations ==========
+    void createPost();
+    void viewMyPosts();
+    void deletePost();
+    void likePost();
+    void unlikePost();
+    void editPost();
     
+    // ========== Feed Operations ==========
+    void viewFeed();
+    void viewUserFeed(const std::string& user_id);
+    void interactWithPost();
+    
+    // ========== Comment Operations ==========
+    void addCommentToPost();
+    void viewPostComments();
+    void deleteComment();
+    void likeComment();
 
 public:
     // ========== Constructor & Destructor ==========
