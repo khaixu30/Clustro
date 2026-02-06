@@ -1,0 +1,8 @@
+/.vscode/
+
+/build/
+
+/data/
+
+/src/externals/
+/.temp/
